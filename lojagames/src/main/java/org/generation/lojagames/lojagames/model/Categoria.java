@@ -14,6 +14,24 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/**		 
+ * 		
+ * 		Class responsible to create the Table "tb_categoria" in MYSQL and its atributes, also, this class creates the methods getters and setters.
+ *		 Atributes description:
+ *		* id - it's the PRIMARY KEY
+ *		* genero - KInd of game(fps, sports, etc )
+ *		* console - The console of the game (PS4, PC, XBoX)
+ *		* There's is also a list of the class tb_produto, as FOREIGN KEY
+ *
+ *			PORTUGUES
+ * 		Classe responsavel por criar a Tabela tb_categoria no MYSQL e seus atributos, essa classe também possui os methodos GEtters e Setters.
+ * 		* id - É a chave primaria
+ * 		* genero - Tipo de jogo (FPS, ESPORTES, etc)
+ * 		* console - Tipo de console do produto (XBOX, PC, PS4)
+ * 		* Também possui uma lista da classe tb_produto, como CHAVE ESTRANTGEIRA
+ * 
+ * 
+ * */
 
 @Entity
 @Table(name = "tb_categoria")
