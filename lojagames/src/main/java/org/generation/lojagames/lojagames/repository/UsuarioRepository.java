@@ -1,5 +1,11 @@
 package org.generation.lojagames.lojagames.repository;
 
-public interface UsuarioRepository {
+import java.util.Optional;
+
+import org.generation.lojagames.lojagames.model.Usuario;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+	public Optional<Usuario> findByUsuario(String usuario);
 
 }
